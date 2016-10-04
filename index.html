@@ -46,8 +46,14 @@
             <textarea class="hidden" id="Editor"></textarea>
             <div class="position-absolute pinBL width-100 bc-white--translucent padding-m">
                 <div id="AssetLibrary">
-                    <div class="js-asset" data-name="button">
-                        <button class="display-inlineBlock br-s color-white fw-5 bc-pink pt-s pb-s pl-m pr-m bw-0 fs-m cursor-pointer td-none us-none os-none">Button</button>
+                    <div class="display-inlineBlock cursor-pointer js-asset" data-name="button">
+                        <button class="display-inlineBlock br-s color-white fw-5 bc-pink pt-s pb-s pl-m pr-m bw-0 fs-m cursor-pointer td-none us-none os-none" style="pointer-events: none;">Button</button>
+                    </div>
+                    <div class="display-inlineBlock cursor-pointer js-asset" data-name="input">
+                        <input class="display-inlineBlock br-s bc-white padding-xs bw-1 bs-solid fs-m os-none" placeholder="Type something..." style="pointer-events: none;">
+                    </div>
+                    <div class="display-inlineBlock cursor-pointer js-asset" data-name="heading">
+                        <h1 class="fs-xxxl lh-xxxl color-charcoal fw-3 ls-xs" style="pointer-events: none;">Heading</h1>
                     </div>
                 </div>
             </div>

@@ -35,9 +35,9 @@ $(function() {
         var line = doc.getLine(cursor.line); // get the line contents
         var pos = { // create a new object to avoid mutation of the original selection
             line: cursor.line,
-            ch: line.length - 1 // set the character position to the end of the line
+            ch: line.length // set the character position to the end of the line
         }
-        doc.replaceRange(data, pos); // adds a new line
+        doc.replaceRange('\n' + data, pos); // adds a new line
     }
 
     // Library of premade components
@@ -48,8 +48,12 @@ $(function() {
         },
         {
             name: "heading",
-            code: '<h1 class="fs-xxxl lh-xxxl fw-3">Heading</h1>'
-        }
+            code: '<h1 class="fs-xxxl lh-xxxl color-charcoal fw-3 ls-xs">This is a heading.</h1>'
+        },
+        {
+            name: "input",
+            code: '<input class="display-inlineBlock br-s bc-white padding-xs bw-1 bs-solid fs-m os-none" placeholder="Type something...">'
+        },
     ]
 
     // Append component to text editor when clicked
