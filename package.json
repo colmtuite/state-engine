@@ -24,14 +24,15 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "bantam": "^0.2.5",
-    "ejs": "2.4.1",
-    "express": "4.13.3"
+    "bantam": "^0.2.5"
   },
   "contributors": [
     {
       "name": "Colm Tuite",
       "email": "colmtuite@gmail.com"
     }
-  ]
+  ],
+  "scripts": {
+      "start": "node index.html"
+  }
 }
