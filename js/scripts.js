@@ -3,7 +3,6 @@
 $(function() {
     // Initialise CodeMirror on textarea
     var editor = CodeMirror.fromTextArea(document.getElementById("Editor"), {
-        value: "hello",
         mode: "xml",
         htmlMode: true,
         lineNumbers: true,
@@ -20,6 +19,10 @@ $(function() {
 
     // Set initial text editor content
     editor.getDoc().setValue('<div class="bc-snow padding-l">\r    <div class="mb-m">\r        <h1 class="fs-xxxl lh-xxxl color-charcoal fw-3 ls-xs">Design with just html.</h1>\r    </div>\r    <h2 class="fs-xl lh-xxl color-steel fw-3 ls-xs">Edit the html and it updates in real-time. Edit the classes to tweak the design. Add components from the menu below.</h2>\r</div>');
+
+    var initialContent = editor.getValue();
+    $('#Player').html(initialContent);
+
 
     // Update preview pane when text editor changes
     editor.on("change", function(cm, change) {
