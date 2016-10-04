@@ -1,0 +1,13 @@
+/* Box shadow */
+
+.bs-constantRaiseRadioButtonOtherButtons    { box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24); }
+.bs-constantDistanceHeaderAndFab            { box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28); }
+.bs-active          { box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32); }
+.bs-dialogCompose   { box-shadow: 0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36); }
+.bs-modal           { box-shadow: 0 0 14px rgba(0,0,0,.24),0 14px 28px rgba(0,0,0,.48); }
+
+/*.bs-card { box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24); }*/
+
+/* Buttons, checkboxes, cards and other basic UI elements are on first level. Jump to second level on hover. */
+/* More distant UI elements like FAB buttons and headers are on second level. Jump to third level on hover. */
+/* Most distant UI elements like modals are on fourth level. Nowhere to jump. */
