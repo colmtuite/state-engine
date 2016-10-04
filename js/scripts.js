@@ -44,7 +44,7 @@ $(function() {
     var AssetLibrary = [
         {
             name: "button-flat",
-            code: '<button class="display-inlineBlock br-s color-white fw-5 bc-pink pt-s pb-s pl-m pr-m bw-0 fs-m cursor-pointer td-none us-none os-none">Button</button>'
+            code: '<button class="display-inlineBlock br-s color-white fw-5 bc-blue pt-s pb-s pl-m pr-m bw-0 fs-m cursor-pointer td-none us-none os-none">Button</button>'
         },
         {
             name: "heading-xxxxl",
