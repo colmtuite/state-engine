@@ -42,22 +42,85 @@
         </style>
     </head>
     <body class="ff-system color-charcoal tr-optimizeLegibility">
-        <aside class="js-ScrollGuard position-fixed pinTL width-50" style="bottom: 0;">
+        <aside class="position-fixed pinTL width-50 js-ScrollGuard" style="bottom: 0;">
             <textarea class="hidden" id="Editor"></textarea>
-            <div class="position-absolute pinBL width-100 bc-white--translucent padding-m">
-                <div id="AssetLibrary">
-                    <div class="display-inlineBlock cursor-pointer js-asset" data-name="button">
-                        <button class="display-inlineBlock br-s color-white fw-5 bc-pink pt-s pb-s pl-m pr-m bw-0 fs-m cursor-pointer td-none us-none os-none" style="pointer-events: none;">Button</button>
+        </aside>
+        <div class="position-fixed pinBL width-50 height-75 bc-white--translucent padding-l overflow-auto zi-max js-ScrollGuard js-AssetLibrary" style="margin-left: -1px; box-shadow: -5px -2px 14px 0 rgba(176,190,197,.5); bottom: -900px; transition: bottom 300ms ease-out">
+            <div id="AssetLibrary">
+                <h3 class="fs-xxl lh-xxl fw-3 ls-s pb-xs">Asset Library</h3>
+                <div class="mt-m mb-xs">
+                    <h4 class="fs-l lh-l fw-3 color-steel ls-s">Buttons</h4>
+                </div>
+                <div class="inline">
+                    <div>
+                        <div class="display-inlineBlock ta-center padding-s bc-snow--hover cursor-pointer js-asset" data-name="button-flat">
+                            <button class="display-inlineBlock br-s color-white fw-5 bc-blue pt-s pb-s pl-m pr-m bw-0 fs-m cursor-pointer td-none us-none os-none" style="pointer-events: none;">Button</button>
+                            <div class="mt-xs">
+                                <span class="display-block fs-s">Flat Button</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="display-inlineBlock cursor-pointer js-asset" data-name="input">
-                        <input class="display-inlineBlock br-s bc-white padding-xs bw-1 bs-solid fs-m os-none" placeholder="Type something..." style="pointer-events: none;">
+                </div>
+                <div class="mt-m mb-xs">
+                    <h4 class="fs-l lh-l fw-3 color-steel ls-s">Inputs</h4>
+                </div>
+                <div class="inline">
+                    <div>
+                        <div class="display-inlineBlock ta-center padding-s bc-snow--hover cursor-pointer js-asset" data-name="input">
+                            <input class="display-inlineBlock br-s bc-white padding-xs bw-1 bs-solid fs-m os-none" placeholder="Type something..." style="pointer-events: none;">
+                            <div class="mt-xs">
+                                <span class="display-block fs-s">Input</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="display-inlineBlock cursor-pointer js-asset" data-name="heading">
-                        <h1 class="fs-xxxl lh-xxxl color-charcoal fw-3 ls-xs" style="pointer-events: none;">Heading</h1>
+                </div>
+                <div class="mt-m mb-xs">
+                    <h4 class="fs-l lh-l fw-3 color-steel ls-s">Headings</h4>
+                </div>
+                <div class="inline">
+                    <div>
+                        <div class="display-inlineBlock ta-center padding-s bc-snow--hover cursor-pointer js-asset" data-name="heading-xxxxl">
+                            <h1 class="fs-xxxxl lh-xxxxl color-charcoal fw-3 ls-xxs" style="pointer-events: none;">Heading</h1>
+                            <div class="mt-xs">
+                                <span class="display-block fs-s">XXXXL Heading</span>
+                            </div>
+                        </div>
+                        <div class="display-inlineBlock ta-center padding-s bc-snow--hover cursor-pointer js-asset" data-name="heading-xxxl">
+                            <h1 class="fs-xxxl lh-xxxl color-charcoal fw-3 ls-xs" style="pointer-events: none;">Heading</h1>
+                            <div class="mt-xs">
+                                <span class="display-block fs-s">XXXL Heading</span>
+                            </div>
+                        </div>
+                        <div class="display-inlineBlock ta-center padding-s bc-snow--hover cursor-pointer js-asset" data-name="heading-xxl">
+                            <h1 class="fs-xxl lh-xxl color-charcoal fw-3" style="pointer-events: none;">Heading</h1>
+                            <div class="mt-xs">
+                                <span class="display-block fs-s">XXL Heading</span>
+                            </div>
+                        </div>
+                        <div class="display-inlineBlock ta-center padding-s bc-snow--hover cursor-pointer js-asset" data-name="heading-xl">
+                            <h1 class="fs-xl lh-xl color-charcoal fw-3" style="pointer-events: none;">Heading</h1>
+                            <div class="mt-xs">
+                                <span class="display-block fs-s">XL Heading</span>
+                            </div>
+                        </div>
+                        <div class="display-inlineBlock ta-center padding-s bc-snow--hover cursor-pointer js-asset" data-name="heading-l">
+                            <h1 class="fs-l lh-l color-charcoal" style="pointer-events: none;">Heading</h1>
+                            <div class="mt-xs">
+                                <span class="display-block fs-s">Large Heading</span>
+                            </div>
+                        </div>
+                        <div class="display-inlineBlock ta-center padding-s bc-snow--hover cursor-pointer js-asset" data-name="paragraph">
+                            <p class="fs-m lh-m color-charcoal" style="pointer-events: none;">This is some paragraph text.</p>
+                            <div class="mt-xs">
+                                <span class="display-block fs-s">Paragraph</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </aside>
+            <button class="position-absolute pinTR padding-0 fs-m color-steel bc-white bw-0 color-blue--hover cursor-pointer margin-s os-none js-AssetLibraryClose">Close</button>
+        </div>
+        <button class="position-fixed pinBL lh-s fs-m color-white fw-5 br-circle bc-pink bw-0 cursor-pointer margin-m os-none ta-center js-AssetLibraryTrigger" style="width: 80px; height: 80px; box-shadow: 0 2px 10px 0 rgba(0,0,0,.2)">Asset Library</button>
         <div class="width-50 height-100 float-right">
             <div class="display-table height-100 width-100">
                 <div class="display-tableCell va-middle">

@@ -43,12 +43,32 @@ $(function() {
     // Library of premade components
     var AssetLibrary = [
         {
-            name: "button",
+            name: "button-flat",
             code: '<button class="display-inlineBlock br-s color-white fw-5 bc-pink pt-s pb-s pl-m pr-m bw-0 fs-m cursor-pointer td-none us-none os-none">Button</button>'
         },
         {
-            name: "heading",
+            name: "heading-xxxxl",
+            code: '<h1 class="fs-xxxxl lh-xxxxl color-charcoal fw-3 ls-xxs">This is a heading.</h1>'
+        },
+        {
+            name: "heading-xxxl",
             code: '<h1 class="fs-xxxl lh-xxxl color-charcoal fw-3 ls-xs">This is a heading.</h1>'
+        },
+        {
+            name: "heading-xxl",
+            code: '<h2 class="fs-xxl lh-xxl color-charcoal fw-3 ls-xs">This is a heading.</h1>'
+        },
+        {
+            name: "heading-xl",
+            code: '<h3 class="fs-xl lh-xl color-charcoal fw-3 ls-xs">This is a heading.</h1>'
+        },
+        {
+            name: "heading-l",
+            code: '<h4 class="fs-l lh-l color-charcoal fw-3 ls-xs">This is a heading.</h1>'
+        },
+        {
+            name: "paragraph",
+            code: '<p class="fs-m lh-m color-charcoal">You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I dunno exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that Im breaking now. We said we say it was the snow that killed the other two, but it wasnt. Nature is lethal but it doesnt hold a candle to man.</p>'
         },
         {
             name: "input",
@@ -92,5 +112,12 @@ $(function() {
 
         (e || window.event).returnValue = confirmationMessage; //Gecko + IE
         return confirmationMessage;                            //Webkit, Safari, Chrome
+    });
+
+    $('.js-AssetLibraryTrigger').click(function() {
+        $('.js-AssetLibrary').css('bottom', '0');
+    });
+    $('.js-AssetLibraryClose').click(function() {
+        $('.js-AssetLibrary').css('bottom', '-900px');
     });
 });
