@@ -27,6 +27,6 @@
     }
   ],
   "scripts": {
-      "start": "node index.php"
+      "start": "open index.php"
   }
 }
