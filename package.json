@@ -4,9 +4,6 @@
   "description": "Design tool.",
   "author": "Colm Tuite <colmtuite@gmail.com> (http://www.colmtuite.com)",
   "main": "css/scripts.js",
-  "engines": {
-    "node": "5.6.1"
-},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/colmtuite/state-engine.git"
