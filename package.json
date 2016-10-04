@@ -31,5 +31,8 @@
       "name": "Colm Tuite",
       "email": "colmtuite@gmail.com"
     }
-  ]
+  ],
+  "scripts":{
+    "start": "node ./bin/www"
+}
 }
