@@ -24,13 +24,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "cssnano": "^3.5.2",
-    "normalize.css": "^4.1.1",
-    "postcss": "^5.0.21",
-    "postcss-custom-media": "^5.0.1",
-    "autoprefixer": "^6.3.6",
-    "precss": "^1.4.0",
-    "yargs": "^4.7.1"
+    "bantam": "^0.2.5"
   },
   "contributors": [
     {
