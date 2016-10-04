@@ -30,6 +30,6 @@
     }
   ],
   "scripts": {
-      "start": "node index.html"
+      "start": "node index.js"
   }
 }

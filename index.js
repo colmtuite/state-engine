@@ -13,9 +13,10 @@
             .CodeMirror {
                 padding: 10px;
                 font-size: 14px;
+                line-height: 1.6 !important;
                 border-right: 1px solid #b0bec5;
                 height: 100%;
-                font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+                font-family: "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace;
             }
 
             .CodeMirror-cursor {
@@ -25,6 +26,10 @@
 
             .CodeMirror-lines {
                 padding: 0 !important;
+            }
+
+            .CodeMirror-line:hover {
+                background-color: #f2f9ff;
             }
 
             ::-webkit-scrollbar {

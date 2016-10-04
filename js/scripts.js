@@ -86,6 +86,7 @@ $(function() {
             return obj.name === assetName;
         })[0];
         updateCodeMirror(result.code);
+        $('.js-AssetLibrary').css('bottom', '-900px');
     });
 
     // Lock window scroll when scrolling containers
