@@ -14,7 +14,7 @@ $(function() {
         autoCloseBrackets: true,
         autoCloseTags: true,
         keyMap: "sublime",
-
+        styleActiveLine: true
     });
 
     // Set initial text editor content
